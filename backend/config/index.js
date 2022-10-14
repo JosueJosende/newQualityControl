@@ -3,13 +3,11 @@
 const PORT = 4004
 
 let SERVER = {
-	ensayo: 'default'
+	nombre: 'ControlCalidad_1'
 }
 
 let EQUIPO = {
-	numeroSerie: '',
-	modelo: '',
-	potenciaFrigorica: ''
+	
 }
 
 module.exports = {

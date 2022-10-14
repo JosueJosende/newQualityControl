@@ -1,42 +1,35 @@
 'use strict'
 
-// Requeriments de depencencies
+/******************************************************************************************************** */
+/**																																																				*/
+/**		Requerimientos de modulos de terceros y locales.																									 	*/
+/**																																																				*/
+/**		GLBL: 			Archivo de configuracion de la aplicacion																								*/
+/**		JsonDB: 		Modulo gestion archivos JSON																														*/
+/**		Config: 		Modulo gestion archivos JSON																														*/
+/**																																																				*/
+/******************************************************************************************************** */
+
 const GLBL = require('../config/index');
 const { JsonDB } = require('node-json-db');
-const { Config } = require('node-json-db/dist/lib/JsonDBConfig');
+const { ConfigDB } = require('node-json-db/dist/lib/JsonDBConfig');
 
 
 
-/** ********************************************************************************* **/
-/*
-/*
-/*
-/** ********************************************************************************* **/
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	El segundo argumento se usa para decirle a la base de datos que guarde automaticamente							*/
+/**			Si es false, se deberá llamar al metodo save() despues de cada accion 														*/
+/**																																																			 	*/
+/**		El tercer argumento guarda los datos en formato lectura facil. (default false)											*/
+/**			Si es true, formato lectura facil																																	*/
+/**			Si es false, formato minimizado																																		*/
+/**																																																				*/		
+/**		El último argumento es el separador, por defecto  slash (/)																					*/	
+/**																																																				*/
+/**********************************************************************************************************/
 
-let CrearNuevo = (server) => {
-	let dbFin = new JsonDB(new Config('./ensayos/' + GLBL.EQUIPO.modelo + '-' + GLBL.EQUIPO.potencia + '_' + GLBL.numeroSerie, true, false, '/'));
-	try {
-		dbFin.push('/', datos);
-	} catch (err) {
-		console.log('Ocurrio un error al guardar la verificacion en finalizadas: ', err);
-	}
-}
+module.exports.datosVerificacion = new JsonDB(new ConfigDB('../models/'+GLBL.SERVER.nombre, true, false, '/'));
 
+module.exports.componentes = new JsonDB(new ConfigDB('../models/componentes', true, false, '/'));
 
-
-
-/** ********************************************************************************* **/
-/*
-/*
-/*
-/** ********************************************************************************* **/
-let Cargar = (ensayo) => {
-	module.exports.ENSAYO = new JsonDB(new Config(ensayo, true, false, '/'));
-}
-
-
-let Ensayo = new JsonDB(new Config('./MB2C', true, false, '/'));	
-
-
-module.exports.CrearNuevo = CrearNuevo;
-module.exports.ENSAYO = Ensayo;

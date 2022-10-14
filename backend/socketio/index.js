@@ -1,15 +1,29 @@
 'use strict'
 
-// Requeriments de depencencies
+/******************************************************************************************************** */
+/**																																																				*/
+/**		Requerimientos de modulos de terceros y locales.																									 	*/
+/**																																																				*/
+/**		GLBL: 			Archivo de configuracion de la aplicacion																								*/
+/**																																																				*/
+/******************************************************************************************************** */
 const GLBL = require('./config/index');
-const { dbA } = require('./models/bbdd');
-const { setVars } = require('./serveis/accionesCurl');
 
 
 
 let io;
 
 let Socket_IO = (server) => {
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Se crea una nueva instancia de socket.io pasando como parametro el servidor http o (https)					*/
+/**																																																				*/
+/**		Params:																																															*/
+/**			server [Object]																																										*/
+/**																																																				*/
+/**********************************************************************************************************/
+	
 	io = require('socket.io')(server, {
 		cors: {
 			origin: '*',
@@ -17,14 +31,18 @@ let Socket_IO = (server) => {
 		}
 	});
 
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Escucha las peticiones entrantes de cliente "socket" contiene la info necesaria para responder			*/
+/**																																																				*/
+/**********************************************************************************************************/
+	
 	io.on('connection', (socket) => {
 
 	
-		socket.on('datosEquipo', (datos) => { 
-			GLBL.EQUIPO.numeroSerie = datos.numeroSerie;
-			GLBL.EQUIPO.modelo = datos.modelo;
-			GLBL.EQUIPO.potenciaFrigorica = datos.potenciaFrigorica;
-		});
+		socket.on('datosEquipo', (datos) => { });
 
 		
 

@@ -1,27 +1,66 @@
 'use strict'
 
-// Requeriment de dependencies
+/******************************************************************************************************** */
+/**																																																				*/
+/**		Requerimientos de modulos de terceros y locales.																									 	*/
+/**																																																				*/
+/******************************************************************************************************** */
+
 const express = require('express');
 const ws = require('./socketio/index.js');
 const http = require('http');
 const GLBL = require('./config/general');
 
-// Es crea la aplicació on es referencia amb la variable "app"
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Guardamos en la variable "app" la instancia de la aplicación express																*/
+/**																																																				*/
+/**********************************************************************************************************/
+
 const app = express();
 
-// Dins l'aplicació ens permet gestionar dades entrants com objectes JSON, nomès quan la petició es POST o PUT
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Permite gestion de objetos JSON a la aplicacion, si la peticion es POST o PUT												*/
+/**																																																				*/
+/**********************************************************************************************************/
+
 app.use(express.json());
 
-// inicialitzem el servidor
-const server = http.createServer(app)
-// conexió de sockets amb el servidor
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	En la variable "server" creamos el servidor pasando como parametro el modulo 												*/
+/**		"express" instanciado en la variable "app"																													*/
+/**																																																				*/
+/**********************************************************************************************************/
+
+const server = http.createServer(app);
+
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Llamamos a SOCKET.IO	'./socketio/index.js' pasando como parametro el servidor creado								*/
+/**																																																				*/
+/**********************************************************************************************************/
+
 ws.Socket_IO(server);
 
 
-//peticiones.getDades(true);
 
 
-// Aixequem el servidor
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Levantamos el servidor escuchando el puerto ${}, [ Variable Global en config/index.js]							*/
+/**																																																				*/
+/**********************************************************************************************************/
+
 server.listen(GLBL.PORT, () => {
 	log.info(`Servidor iniciat i escoltant en el port: ${GLBL.PORT} | http://localhost:${GLBL.PORT}`);
 })
