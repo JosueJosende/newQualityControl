@@ -3,7 +3,8 @@
 const PORT = 4004
 
 let SERVER = {
-	nombre: 'ControlCalidad_1'
+	nombre: 'ControlCalidad_1',
+	urlApiCarel: ''
 }
 
 let EQUIPO = {

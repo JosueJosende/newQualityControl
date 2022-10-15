@@ -29,7 +29,53 @@ const { ConfigDB } = require('node-json-db/dist/lib/JsonDBConfig');
 /**																																																				*/
 /**********************************************************************************************************/
 
-module.exports.datosVerificacion = new JsonDB(new ConfigDB('../models/'+GLBL.SERVER.nombre, true, false, '/'));
+/******************************************************************************************************** */
+/**																																																				*/
+/**		BBDD donde se guardaran los datos de la verificacion en curso.																		 	*/
+/**																																																				*/
+/******************************************************************************************************** */
+
+module.exports.datosVerificacion = new JsonDB(new ConfigDB('../models/' + GLBL.SERVER.nombre, true, false, '/'));
+
+
+
+
+/******************************************************************************************************** */
+/**																																																				*/
+/**		BBDD con la relacion de componentes de un equipo por numero de articulo.													 	*/
+/**																																																				*/
+/******************************************************************************************************** */
 
 module.exports.componentes = new JsonDB(new ConfigDB('../models/componentes', true, false, '/'));
+
+
+
+
+/******************************************************************************************************** */
+/**																																																				*/
+/**		BBDD donde se guardaran las verificaciones de equipos empezadas pero no finalizadas.							 	*/
+/** 	con la posibilidad de retomar en el punto donde se quedo.																						*/
+/**																																																				*/
+/******************************************************************************************************** */
+
+module.exports.inacabadas = new JsonDB(new Config('../verificaciones/inacabadas', true, false, '/'));
+
+
+
+
+/******************************************************************************************************** */
+/**																																																				*/
+/**		Se crea un archivo por cada verificacion acabada con exito.																				 	*/
+/**																																																				*/
+/******************************************************************************************************** */
+
+module.exports.createJson = async (datos) => {
+	let dbFin = new JsonDB(new Config('./verificaciones/finalizadas/' + datos.nombre + '_' + datos.numSerie, true, false, '/'));
+	
+	try {
+		dbFin.push('/', datos);
+	} catch (err) {
+		console.log('Ocurrio un error al guardar la verificacion en finalizadas: ', err);
+	}
+}
 
