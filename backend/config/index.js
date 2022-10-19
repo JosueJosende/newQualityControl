@@ -4,15 +4,54 @@ const PORT = 4004
 
 let SERVER = {
 	nombre: 'ControlCalidad_1',
-	urlApiCarel: ''
+	version: '0.8.2',
+	urlApiCarel: '',
+
+	configSQL: {
+		server: '10.44.82.43',
+		database:'axapta_25',
+  	options: {
+			tdsVersion: "7_1",
+			encrypt: false, 
+			rowCollectionOnRequestCompletion: true,
+			database: 'axapta_25',
+			requestTimeout: 30 * 1000,
+			debug: {
+				data: true,
+				payload: false,
+				token: false,
+				packet: true,
+				log: true
+			}
+  	},
+  	authentication: {
+    	type: 'default',
+			options: {
+				database:'axapta_25',
+    	  userName: 'sa',
+    	  password: 'ducati!'
+    	}
+  	}
+	},
+}
+
+let APP = {
+	tiempoReconexionAxapta: 30000,
 }
 
 let EQUIPO = {
 	
 }
 
+let ESTADOS = {
+	ConexionAxapta: false,
+	EstadoAxapta: 'Desconectado', // [Desconectado, Establecida, Reconectando]
+}
+
 module.exports = {
 	PORT,
 	SERVER,
-	EQUIPO
+	EQUIPO,
+	ESTADOS,
+	APP
 }
