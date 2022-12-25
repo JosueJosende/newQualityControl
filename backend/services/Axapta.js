@@ -90,8 +90,8 @@ connection.on('error', () => console.log('ERROR: Se Perdio la comunicación') );
 const Connected = ((err) => {
 	if (err) {
     console.log(err);
-		ESTADOS.ConexionAxapta = false;
-		ESTADOS.EstadoAxapta = 'Desconectado';
+		ESTADOS.EstadoAxapta = false;
+		ESTADOS.InfoAxapta = 'Desconectado';
 
 
 
@@ -105,12 +105,12 @@ const Connected = ((err) => {
 			ESTADOS.EstadoAxapta = 'Reconectando';
 			Conectar();
 			console.log('*** Reintentando reconectar con la BBDD, Axapta ***');
-		}, APP.tiempoReconexionAxapta);
+		}, 30000);
 	}
 	
 	console.log('*** Conexión establecida BBDD, Axapta ***');
-	ESTADOS.ConexionAxapta = true;
-	ESTADOS.EstadoAxapta = 'Establecida';
+	ESTADOS.EstadoAxapta = true;
+	ESTADOS.InfoAxapta = 'Establecida';
 });
 
 

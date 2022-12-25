@@ -7,9 +7,10 @@
 /******************************************************************************************************** */
 
 const express = require('express');
-const ws = require('./socketio/index.js');
-const http = require('http');
-const GLBL = require('./config/general');
+const ws = 			require('./socketio/index');
+const http = 		require('http');
+const GLBL = 		require('./config/general');
+const Axapta = 	require('./services/Axapta');
 
 
 
@@ -52,6 +53,16 @@ const server = http.createServer(app);
 
 ws.Socket_IO(server);
 
+
+
+
+/**********************************************************************************************************/
+/**																																																				*/
+/** 	Establece comunicacion con base de datos Axapta																											*/
+/**																																																				*/
+/**********************************************************************************************************/
+
+Axapta.Conectar();
 
 
 

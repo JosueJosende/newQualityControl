@@ -35,7 +35,7 @@ const { ConfigDB } = require('node-json-db/dist/lib/JsonDBConfig');
 /**																																																				*/
 /******************************************************************************************************** */
 
-module.exports.datosVerificacion = new JsonDB(new ConfigDB('../models/' + GLBL.SERVER.nombre, true, false, '/'));
+module.exports.datosVerificacion = new JsonDB(new ConfigDB('../verificacion/' + GLBL.SERVER.nombre, true, false, '/'));
 
 
 
@@ -46,7 +46,31 @@ module.exports.datosVerificacion = new JsonDB(new ConfigDB('../models/' + GLBL.S
 /**																																																				*/
 /******************************************************************************************************** */
 
-module.exports.componentes = new JsonDB(new ConfigDB('../models/componentes', true, false, '/'));
+module.exports.componentes = new JsonDB(new ConfigDB('../db/componentes', true, false, '/'));
+
+
+
+
+/******************************************************************************************************** */
+/**																																																				*/
+/**		BBDD con la relacion de datos para verificaciones sin conexion a Axapta.													 	*/
+/**																																																				*/
+/******************************************************************************************************** */
+
+module.exports.datosSinConexion = new JsonDB(new ConfigDB('../db/datosSinConexion', true, false, '/'));
+
+
+
+
+
+/******************************************************************************************************** */
+/**																																																				*/
+/**		BBDD configuración de la aplicación.																															 	*/
+/**																																																				*/
+/******************************************************************************************************** */
+
+module.exports.configVerificacion = new JsonDB(new ConfigDB('../dbConfig', true, false, '/'));
+
 
 
 
@@ -58,8 +82,15 @@ module.exports.componentes = new JsonDB(new ConfigDB('../models/componentes', tr
 /**																																																				*/
 /******************************************************************************************************** */
 
-module.exports.inacabadas = new JsonDB(new Config('../verificaciones/inacabadas', true, false, '/'));
-
+module.exports.inacabadas = async (datos) => {
+	let inacabada = new JsonDB(new ConfigDB('../verificaciones/inacabadas/' + datos.nombre + '_' + datos.numSerie, true, false, '/'));
+	
+	try {
+		inacabada.push('/', datos);
+	} catch (err) {
+		console.log('Ocurrio un error al guardar la verificacion en inacabadas: ', err);
+	}
+}
 
 
 
@@ -69,11 +100,11 @@ module.exports.inacabadas = new JsonDB(new Config('../verificaciones/inacabadas'
 /**																																																				*/
 /******************************************************************************************************** */
 
-module.exports.createJson = async (datos) => {
-	let dbFin = new JsonDB(new Config('./verificaciones/finalizadas/' + datos.nombre + '_' + datos.numSerie, true, false, '/'));
+module.exports.finalizadas = async (datos) => {
+	let finalizada = new JsonDB(new ConfigDB('../verificaciones/finalizadas/' + datos.nombre + '_' + datos.numSerie, true, false, '/'));
 	
 	try {
-		dbFin.push('/', datos);
+		finalizada.push('/', datos);
 	} catch (err) {
 		console.log('Ocurrio un error al guardar la verificacion en finalizadas: ', err);
 	}

@@ -36,22 +36,23 @@ let SERVER = {
 }
 
 let APP = {
-	tiempoReconexionAxapta: 30000,
+	operario: '',
+	runLoop: false
 }
 
-let EQUIPO = {
+let VERIFICACION = {
 	
 }
 
 let ESTADOS = {
-	ConexionAxapta: false,
-	EstadoAxapta: 'Desconectado', // [Desconectado, Establecida, Reconectando]
+	EstadoAxapta: false,
+	InfoAxapta: 'Desconectado', // [Desconectado, Establecida, Reconectando]
 }
 
 module.exports = {
 	PORT,
 	SERVER,
-	EQUIPO,
+	VERIFICACION,
 	ESTADOS,
 	APP
 }

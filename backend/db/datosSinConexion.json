@@ -1,0 +1,261 @@
+{
+	"verificadors": [
+		{
+			"name": "Carlos Marin",
+			"pass": ""
+		},
+		{
+			"name": "Antonio Ruiz",
+			"pass": ""
+		},
+		{
+			"name": "Pedro Huerta",
+			"pass": ""
+		},
+		{
+			"name": "Jose Vicente Montell",
+			"pass": ""
+		},
+		{
+			"name": "Jose Luis Real",
+			"pass": ""
+		},
+		{
+			"name": "Pedro Chacon",
+			"pass": ""
+		},
+		{
+			"name": "Andreu Llao",
+			"pass": ""
+		},
+		{
+			"name": "Cristobal Martinez",
+			"pass": ""
+		},
+		{
+			"name": "Javier Amela",
+			"pass": "3320"
+		},
+		{
+			"name": "Jose Maria Hernandez",
+			"pass": ""
+		},
+		{
+			"name": "Luis Nieto",
+			"pass": ""
+		},
+		{
+			"name": "Antonio Castellano",
+			"pass": ""
+		},
+		{
+			"name": "Josue Josende",
+			"pass": "0516"
+		},
+		{
+			"name": "Eduardo Barranco",
+			"pass": ""
+		},
+		{
+			"name": "Manuel Diaz",
+			"pass": ""
+		}
+	],
+	"equips": [
+		{
+			"nom": "WPH",
+			"models": [
+				91,
+				121,
+				141,
+				171,
+				201,
+				251,
+				351,
+				401,
+				501,
+				701,
+				751,
+				1001,
+				1201
+			],
+			"activat": true,
+			"numEquip": 1,
+			"opcionals": [
+				"Magnetotermico Compresor",
+				"Magnetotermico Ventilador",
+				"Impulsion Aire Trasera",
+				"Valvula Corte",
+				"Aislamiento Euroclase A1",
+				"Motor Potenciado",
+				"Valvula Presostatica",
+				"Bateria Apoyo Agua",
+				"Filtro Ignifugo M1",
+				"Resistencia Electrica Aire",
+				"Bateria Anticorrosion",
+				"Interruptor Flujo",
+				"Funda Acustica Compresores",
+				"Display PGD"
+			]
+		},
+		{
+			"nom": "WPV",
+			"models": [
+				251,
+				351,
+				401,
+				501,
+				701,
+				751,
+				1001,
+				1201,
+				1501,
+				2002,
+				1402,
+				3002,
+				4002
+			],
+			"activat": true,
+			"numEquip": 2,
+			"opcionals": []
+		},
+		{
+			"nom": "Kr3",
+			"models": [
+				40,
+				45,
+				55,
+				65,
+				75,
+				85,
+				95,
+				120,
+				140,
+				160,
+				190,
+				235
+			],
+			"activat": false,
+			"numEquip": 3,
+			"opcionals": []
+		},
+		{
+			"nom": "uKr3",
+			"models": [
+				17,
+				23,
+				30,
+				38
+			],
+			"activat": false,
+			"numEquip": 4,
+			"opcionals": []
+		},
+		{
+			"nom": "Aquacore",
+			"models": [
+				18
+			],
+			"activat": true,
+			"numEquip": 5,
+			"opcionals": []
+		},
+		{
+			"nom": "KuN",
+			"models": [
+				45,
+				55,
+				65,
+				75,
+				90,
+				105,
+				125,
+				145,
+				175,
+				210
+			],
+			"activat": true,
+			"numEquip": 6,
+			"opcionals": []
+		},
+		{
+			"nom": "ACH(i)",
+			"models": [
+				17,
+				22,
+				27
+			],
+			"activat": true,
+			"numEquip": 7,
+			"opcionals": []
+		},
+		{
+			"nom": "ACH(i)BIG",
+			"models": [
+				35,
+				40,
+				45,
+				55,
+				70,
+				80
+			],
+			"activat": true,
+			"numEquip": 8,
+			"opcionals": []
+		},
+		{
+			"nom": "ACV(i)",
+			"models": [
+				35,
+				40,
+				45,
+				55,
+				70,
+				80
+			],
+			"activat": true,
+			"numEquip": 9,
+			"opcionals": []
+		},
+		{
+			"nom": "ACV(i)BIG",
+			"models": [
+				35,
+				40,
+				45,
+				55,
+				70,
+				80
+			],
+			"activat": true,
+			"numEquip": 10,
+			"opcionals": []
+		}
+	],
+	"refrigerants": [
+		{
+			"valor": 1,
+			"name": "R-134a"
+		},
+		{
+			"valor": 2,
+			"name": "R-407c"
+		},
+		{
+			"valor": 3,
+			"name": "R-410a"
+		},
+		{
+			"valor": 43,
+			"name": "R-454c"
+		},
+		{
+			"valor": 22,
+			"name": "R-32"
+		},
+		{
+			"valor": 6,
+			"name": "R-290"
+		}
+	]
+}
