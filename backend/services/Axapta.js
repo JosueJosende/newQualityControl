@@ -12,6 +12,7 @@
 /******************************************************************************************************** */
 
 const { SERVER, APP, ESTADOS } = require('../config/globals');
+const { toClient } = require('../services/SendToClient');
 const Connection = require('tedious').Connection;
 const Request = require('tedious').Request;
 const TYPES = require('tedious').TYPES;
@@ -38,11 +39,13 @@ let connection;
 /**																																																				*/
 /**		Llamada a la funcion de conexion a la base de datos y escucha de eventos.														*/
 /**																																																				*/
-/**		@param: socket --> emite evento al cliente informando 																							*/
+/**		@param: 																							 																							*/
 /**																																																				*/
 /******************************************************************************************************** */
 
-const Conectar = (socket) => {
+const Conectar = () => {
+	Desconectar();
+
 	connection = new Connection(config);
 	connection.connect(Connected);
 }
@@ -55,12 +58,15 @@ const Conectar = (socket) => {
 /**																																																				*/
 /**		Funcion que desconecta la base de datos.																														*/
 /**																																																				*/
-/**		@param: socket --> emite evento al cliente informando 																							*/
+/**		@param: 																																														*/
 /**																																																				*/
 /******************************************************************************************************** */
 
-const Desconectar = (socket) => {
+const Desconectar = () => {
+	APP.debug ? console.log('Conexión cerrada con base de datos.') : '';
 	connection.close();
+
+	toClient('estados', ESTADOS); // { EstadoAxapta, InfoAxapta, EstadoEquipo, EstadoControlador }
 }
 
 
@@ -111,6 +117,8 @@ const Connected = ((err) => {
 	console.log('*** Conexión establecida BBDD, Axapta ***');
 	ESTADOS.EstadoAxapta = true;
 	ESTADOS.InfoAxapta = 'Establecida';
+
+	toClient('estados', ESTADOS); // { EstadoAxapta, InfoAxapta, EstadoEquipo, EstadoControlador }
 });
 
 

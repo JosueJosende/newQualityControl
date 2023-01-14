@@ -1,1 +1,1259 @@
-{}
+{
+	"103419": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 40/0,5-8",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"103428": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 40/0,5-4 PN6/10",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"103553": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO D80/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"103580": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 40/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"103661": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 50/0,5-16",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"103985": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 80/0,5-6",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104076": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 65/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104268": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 65/0,5-16 PN6/10",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104277": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 30/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104466": {
+		"name": "bomba",
+		"modelo": "WILO YONOS MAXO 30/0,5-10",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104521": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO-D 50/0,5-16",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104557": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS YONOS MAXO D65/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104558": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO D50/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104563": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO 40/0.5-8",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104566": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO D50/0,5-16",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104570": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO 40/0,5-16",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"104588": {
+		"name": "bomba",
+		"modelo": "WILO STRATOS MAXO 50/0,5-12",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"050488": {
+		"name": "compresor",
+		"modelo": "CHR PA89M1C-4DZDE",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 3.4,
+		"minAmperios": 2.3,
+		"envelope": null
+	},
+	"050487": {
+		"name": "compresor",
+		"modelo": "CHR PA125G1C-4FTL1",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 4.6,
+		"minAmperios": 3,
+		"envelope": null
+	},
+	"050486": {
+		"name": "compresor",
+		"modelo": "CHR PA150M2A-7FTS1",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 5.8,
+		"minAmperios": 3.8,
+		"envelope": null
+	},
+	"050485": {
+		"name": "compresor",
+		"modelo": "CHR PA170M2C-4ET2",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 6.6,
+		"minAmperios": 3.9,
+		"envelope": null
+	},
+	"050484": {
+		"name": "compresor",
+		"modelo": "CHR PA215M2AS-4KU",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 9.3,
+		"minAmperios": 7,
+		"envelope": null
+	},
+	"050480": {
+		"name": "compresor",
+		"modelo": "CHR PA270G2CS-4FT1",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 10.2,
+		"minAmperios": 8.8,
+		"envelope": null
+	},
+	"danfossHRH": [
+		{
+			"x": -28,
+			"y": 27
+		},
+		{
+			"x": 12.5,
+			"y": 27
+		},
+		{
+			"x": 12.5,
+			"y": 65
+		},
+		{
+			"x": 3,
+			"y": 65
+		},
+		{
+			"x": -28,
+			"y": 30
+		},
+		{
+			"x": -28,
+			"y": 27
+		}
+	],
+	"danfossHLH": [
+		{
+			"x": -28,
+			"y": 27
+		},
+		{
+			"x": 12.5,
+			"y": 27
+		},
+		{
+			"x": 12.5,
+			"y": 68
+		},
+		{
+			"x": 3,
+			"y": 68
+		},
+		{
+			"x": -28,
+			"y": 26
+		},
+		{
+			"x": -28,
+			"y": 24
+		}
+	],
+	"danfossDSF": [
+		{
+			"x": -30,
+			"y": 10
+		},
+		{
+			"x": 5,
+			"y": 10
+		},
+		{
+			"x": 25,
+			"y": 30
+		},
+		{
+			"x": 25,
+			"y": 55
+		},
+		{
+			"x": 17,
+			"y": 65
+		},
+		{
+			"x": 2,
+			"y": 65
+		},
+		{
+			"x": -30,
+			"y": 25
+		},
+		{
+			"x": -30,
+			"y": 10
+		}
+	],
+	"danfossSH": [
+		{
+			"x": -30,
+			"y": 20
+		},
+		{
+			"x": 5,
+			"y": 20
+		},
+		{
+			"x": 15,
+			"y": 30
+		},
+		{
+			"x": 15,
+			"y": 68
+		},
+		{
+			"x": 4,
+			"y": 68
+		},
+		{
+			"x": -25,
+			"y": 42
+		},
+		{
+			"x": -30,
+			"y": 34
+		},
+		{
+			"x": -30,
+			"y": 20
+		}
+	],
+	"bitzer": [
+		{
+			"x": -10,
+			"y": 20
+		},
+		{
+			"x": 5,
+			"y": 20
+		},
+		{
+			"x": 15,
+			"y": 30
+		},
+		{
+			"x": 20,
+			"y": 55
+		},
+		{
+			"x": 15,
+			"y": 62
+		},
+		{
+			"x": 6,
+			"y": 62
+		},
+		{
+			"x": 0,
+			"y": 58
+		},
+		{
+			"x": -10,
+			"y": 30
+		},
+		{
+			"x": -10,
+			"y": 20
+		}
+	],
+	"059668": {
+		"name": "compresor",
+		"modelo": "HRH040U4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 5160,
+		"minPotencia": 2600,
+		"maxAmperios": 6,
+		"minAmperios": 5.1,
+		"envelope": "danfossHRH"
+	},
+	"059666": {
+		"name": "compresor",
+		"modelo": "HRH049U4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 4900,
+		"minPotencia": 2400,
+		"maxAmperios": 7.9,
+		"minAmperios": 5.8,
+		"envelope": "danfossHRH"
+	},
+	"059667": {
+		"name": "compresor",
+		"modelo": "HRH054U4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 5400,
+		"minPotencia": 2600,
+		"maxAmperios": 7.4,
+		"minAmperios": 5.1,
+		"envelope": "danfossHLH"
+	},
+	"059615": {
+		"name": "compresor",
+		"modelo": "CSH MA HLH068T4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 5500,
+		"minPotencia": 3700,
+		"maxAmperios": 9,
+		"minAmperios": 7.1,
+		"envelope": "danfossHLH"
+	},
+	"059665": {
+		"name": "compresor",
+		"modelo": "CSH MA HCJ091T4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 7400,
+		"minPotencia": 4900,
+		"maxAmperios": 14.8,
+		"minAmperios": 10.2,
+		"envelope": "danfossHLH"
+	},
+	"059080": {
+		"name": "compresor",
+		"modelo": "CSH MA HCJ121T4LC6",
+		"PotAbsorbida": 0,
+		"maxPotencia": 8900,
+		"minPotencia": 6300,
+		"maxAmperios": 15.4,
+		"minAmperios": 12.4,
+		"envelope": "danfossHLH"
+	},
+	"059084": {
+		"name": "compresor",
+		"modelo": "CSH MA SH140-4",
+		"PotAbsorbida": 0,
+		"maxPotencia": 11000,
+		"minPotencia": 7400,
+		"maxAmperios": 19.8,
+		"minAmperios": 15.1,
+		"envelope": "danfossSH"
+	},
+	"059309": {
+		"name": "compresor",
+		"modelo": "DANFOSS DSF-090 R32 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 7800,
+		"minPotencia": 4000,
+		"maxAmperios": 14.8,
+		"minAmperios": 9.5,
+		"envelope": "danfossDSF"
+	},
+	"059310": {
+		"name": "compresor",
+		"modelo": "DANFOSS DSF-100 R32 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 8700,
+		"minPotencia": 4800,
+		"maxAmperios": 15,
+		"minAmperios": 10.2,
+		"envelope": "danfossDSF"
+	},
+	"059311": {
+		"name": "compresor",
+		"modelo": "DANFOSS DSF-115 R32 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 10000,
+		"minPotencia": 6300,
+		"maxAmperios": 17,
+		"minAmperios": 12.6,
+		"envelope": "danfossDSF"
+	},
+	"059313": {
+		"name": "compresor",
+		"modelo": "DANFOSS DSF-155 R32 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 13000,
+		"minPotencia": 7100,
+		"maxAmperios": 22,
+		"minAmperios": 14.9,
+		"envelope": "danfossDSF"
+	},
+	"059314": {
+		"name": "compresor",
+		"modelo": "DANFOSS DSF-175 R32 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 14500,
+		"minPotencia": 9100,
+		"maxAmperios": 24.3,
+		"minAmperios": 17.2,
+		"envelope": "danfossDSF"
+	},
+	"059320": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT6 GSD60120VL_4, 400/3/5",
+		"PotAbsorbida": 0,
+		"maxPotencia": 9800,
+		"minPotencia": 7100,
+		"maxAmperios": 16.6,
+		"minAmperios": 12.4,
+		"envelope": "bitzer"
+	},
+	"059321": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT6 GSD60137VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 11000,
+		"minPotencia": 8000,
+		"maxAmperios": 18.1,
+		"minAmperios": 13.9,
+		"envelope": "bitzer"
+	},
+	"059322": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT6 GSD60154VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 12300,
+		"minPotencia": 8800,
+		"maxAmperios": 20.4,
+		"minAmperios": 15.7,
+		"envelope": "bitzer"
+	},
+	"059323": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT6 GSD60182VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 14000,
+		"minPotencia": 10300,
+		"maxAmperios": 23.8,
+		"minAmperios": 18.3,
+		"envelope": "bitzer"
+	},
+	"059324": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT6 GSD60235VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 19600,
+		"minPotencia": 14000,
+		"maxAmperios": 33.5,
+		"minAmperios": 26,
+		"envelope": "bitzer"
+	},
+	"059325": {
+		"name": "compresor",
+		"modelo": "",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": "bitzer"
+	},
+	"059326": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT8 GSD80295VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 24700,
+		"minPotencia": 17100,
+		"maxAmperios": 38.7,
+		"minAmperios": 27.2,
+		"envelope": "bitzer"
+	},
+	"059327": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT8 GSD80385VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 32200,
+		"minPotencia": 22600,
+		"maxAmperios": 54.3,
+		"minAmperios": 40.8,
+		"envelope": "bitzer"
+	},
+	"059328": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT8 GSD80421VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 34900,
+		"minPotencia": 24300,
+		"maxAmperios": 58.2,
+		"minAmperios": 43.1,
+		"envelope": "bitzer"
+	},
+	"059329": {
+		"name": "compresor",
+		"modelo": "R32 BITZER ORBIT8 GSD80485VL_4, 400/3/50",
+		"PotAbsorbida": 0,
+		"maxPotencia": 39000,
+		"minPotencia": 27700,
+		"maxAmperios": 63.9,
+		"minAmperios": 45.9,
+		"envelope": "bitzer"
+	},
+	"059073": {
+		"name": "compresor",
+		"modelo": "ANB33FEVMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059074": {
+		"name": "compresor",
+		"modelo": "ANB42FBTMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059075": {
+		"name": "compresor",
+		"modelo": "ANB52FKFMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059076": {
+		"name": "compresor",
+		"modelo": "ANB66FBZMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059077": {
+		"name": "compresor",
+		"modelo": "ANB33FBTMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059079": {
+		"name": "compresor",
+		"modelo": "ANB52FFTMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059100": {
+		"name": "compresor",
+		"modelo": "ANB66FKNMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059109": {
+		"name": "compresor",
+		"modelo": "ANB42FKJMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059110": {
+		"name": "compresor",
+		"modelo": "ANB52FKPMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059111": {
+		"name": "compresor",
+		"modelo": "ANB33FKJMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059330": {
+		"name": "compresor",
+		"modelo": "AVB66FLAMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059331": {
+		"name": "compresor",
+		"modelo": "AVB33FACMT SIAMT",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059332": {
+		"name": "compresor",
+		"modelo": "AVB52FLAMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059341": {
+		"name": "compresor",
+		"modelo": "AVB78FLBMT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059342": {
+		"name": "compresor",
+		"modelo": "AVB87FT4MT SIAM",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059380": {
+		"name": "compresor",
+		"modelo": "APB52FAAMT SIAM R290",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059381": {
+		"name": "compresor",
+		"modelo": "APB87FEAMT SIAM R290",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"059382": {
+		"name": "compresor",
+		"modelo": "APB100FB1MT SIAMR290",
+		"PotAbsorbida": 0,
+		"maxPotencia": 0,
+		"minPotencia": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0,
+		"envelope": ""
+	},
+	"069657": {
+		"name": "turbina",
+		"modelo": "CBM/6-180/184-95W",
+		"PotAbsorbida": 95,
+		"maxAmperios": 0.6,
+		"minAmperios": 0.1
+	},
+	"069650": {
+		"name": "turbina",
+		"modelo": "CBM-7/7 6PC VR 72W",
+		"PotAbsorbida": 72,
+		"maxAmperios": 0.8,
+		"minAmperios": 0.4
+	},
+	"069656": {
+		"name": "turbina",
+		"modelo": "CBM/4-180/184 150W",
+		"PotAbsorbida": 150,
+		"maxAmperios": 1.3,
+		"minAmperios": 0.9
+	},
+	"069651": {
+		"name": "turbina",
+		"modelo": "CBM-7/7 4P RE3V 147W",
+		"PotAbsorbida": 147,
+		"maxAmperios": 1.9,
+		"minAmperios": 1.5
+	},
+	"068316": {
+		"name": "turbina",
+		"modelo": "CBM-9/9 REVR 200W",
+		"PotAbsorbida": 200,
+		"maxAmperios": 3.1,
+		"minAmperios": 2.6
+	},
+	"069655": {
+		"name": "turbina",
+		"modelo": "CBM-10/10 6PCVR 245W",
+		"PotAbsorbida": 200,
+		"maxAmperios": 3.1,
+		"minAmperios": 2.6
+	},
+	"069605": {
+		"name": "motor",
+		"modelo": "Motor 3/4cv 0.55KW",
+		"PotAbsorbida": 550,
+		"maxAmperios": 1.6,
+		"minAmperios": 1
+	},
+	"069695": {
+		"name": "motor",
+		"modelo": "Motor 1cv 0.75KW",
+		"PotAbsorbida": 750,
+		"maxAmperios": 1.8,
+		"minAmperios": 1.2
+	},
+	"069697": {
+		"name": "motor",
+		"modelo": "Motor 2cv 1.5KW",
+		"PotAbsorbida": 1500,
+		"maxAmperios": 3.6,
+		"minAmperios": 2.7
+	},
+	"069696": {
+		"name": "motor",
+		"modelo": "Motor 1.1/2cv 1.1KW",
+		"PotAbsorbida": 1100,
+		"maxAmperios": 2.8,
+		"minAmperios": 2.3
+	},
+	"071244": {
+		"name": "radial",
+		"modelo": "GR19V-4IP.Z8.AR",
+		"PotAbsorbida": 0,
+		"maxAmperios": 2.3,
+		"minAmperios": 0.8
+	},
+	"071242": {
+		"name": "radial",
+		"modelo": "GR19V-4IP.Z8.AR",
+		"PotAbsorbida": 0,
+		"maxAmperios": 2.3,
+		"minAmperios": 0.8
+	},
+	"071243": {
+		"name": "radial",
+		"modelo": "GR22V-4IP.ZC BR 0,50 kW",
+		"PotAbsorbida": 500,
+		"maxAmperios": 3.3,
+		"minAmperios": 1.8
+	},
+	"071231": {
+		"name": "radial",
+		"modelo": "GR25C-6ID.BD.CR 0,50 kW",
+		"PotAbsorbida": 500,
+		"maxAmperios": 3.3,
+		"minAmperios": 1.8
+	},
+	"071261": {
+		"name": "radial",
+		"modelo": "GR25C-6ID.BD.CR 0,50 kW",
+		"PotAbsorbida": 500,
+		"maxAmperios": 3.3,
+		"minAmperios": 1.8
+	},
+	"071262": {
+		"name": "radial",
+		"modelo": "GR31C-ZID.DC.CR 2,50 kW",
+		"PotAbsorbida": 2500,
+		"maxAmperios": 2,
+		"minAmperios": 0.9
+	},
+	"071277": {
+		"name": "radial",
+		"modelo": "GR31C-ZID.DC.CR 2,50 kW",
+		"PotAbsorbida": 2500,
+		"maxAmperios": 3,
+		"minAmperios": 0.9
+	},
+	"071239": {
+		"name": "radial",
+		"modelo": "GR31C-ZID.DC.CR 230.1",
+		"PotAbsorbida": 1350,
+		"maxAmperios": 7.5,
+		"minAmperios": 5.8
+	},
+	"071259": {
+		"name": "radial",
+		"modelo": "GR31C-ZID.DC.CR 1,35 kW",
+		"PotAbsorbida": 1350,
+		"maxAmperios": 7.5,
+		"minAmperios": 5.8
+	},
+	"071278": {
+		"name": "radial",
+		"modelo": "GR31C-ZID.DC.CR 1,35 kW",
+		"PotAbsorbida": 1350,
+		"maxAmperios": 7.5,
+		"minAmperios": 5.8
+	},
+	"071280": {
+		"name": "radial",
+		"modelo": "GR40C-ZID.DC.CR 2,40 kW",
+		"PotAbsorbida": 2400,
+		"maxAmperios": 5,
+		"minAmperios": 3
+	},
+	"071247": {
+		"name": "radial",
+		"modelo": "GR40C-ZID.DC.CR 2,40 kW",
+		"PotAbsorbida": 2400,
+		"maxAmperios": 5,
+		"minAmperios": 3
+	},
+	"071240": {
+		"name": "radial",
+		"modelo": "GR45C-ZIK.DG.CR 2 kw",
+		"PotAbsorbida": 2000,
+		"maxAmperios": 4.2,
+		"minAmperios": 2.5
+	},
+	"071252": {
+		"name": "radial",
+		"modelo": "GR45C-ZIK.DG.CR 2,00 kW",
+		"PotAbsorbida": 2000,
+		"maxAmperios": 4.2,
+		"minAmperios": 2.5
+	},
+	"071283": {
+		"name": "radial",
+		"modelo": "GR45C-ZIK.DG.CR 2,00 kW",
+		"PotAbsorbida": 2000,
+		"maxAmperios": 4.2,
+		"minAmperios": 2.5
+	},
+	"071156": {
+		"name": "axial",
+		"modelo": "ZN056-ZIH.DC.V5P4",
+		"PotAbsorbida": 1250,
+		"maxAmperios": 1.95,
+		"minAmperios": 0.27
+	},
+	"071136": {
+		"name": "axial",
+		"modelo": "ZN056-VDH.4M.V7P2",
+		"PotAbsorbida": 1100,
+		"maxAmperios": 2.3,
+		"minAmperios": 1.2
+	},
+	"071150": {
+		"name": "axial",
+		"modelo": "ZN050-ZIH.DC.V7P2",
+		"PotAbsorbida": 900,
+		"maxAmperios": 1.45,
+		"minAmperios": 0.29
+	},
+	"071130": {
+		"name": "axial",
+		"modelo": "ZN050-VDH.4I.V7P",
+		"PotAbsorbida": 740,
+		"maxAmperios": 1.6,
+		"minAmperios": 0.68
+	},
+	"071291": {
+		"name": "axial",
+		"modelo": "FN080-ZIQ.GG.V7P3",
+		"PotAbsorbida": 1850,
+		"maxAmperios": 2.8,
+		"minAmperios": 0.4
+	},
+	"071196": {
+		"name": "axial",
+		"modelo": "FN100-ZIQ.GQ.V5P1",
+		"PotAbsorbida": 2400,
+		"maxAmperios": 3.7,
+		"minAmperios": 0.4
+	},
+	"071197": {
+		"name": "axial",
+		"modelo": "FN100-ZIQ.GQ.V5P1",
+		"PotAbsorbida": 3300,
+		"maxAmperios": 5,
+		"minAmperios": 0.5
+	},
+	"071276": {
+		"name": "axial",
+		"modelo": "ZN080-ZIQ.GG.V7P3",
+		"PotAbsorbida": 1850,
+		"maxAmperios": 2.8,
+		"minAmperios": 0.4
+	},
+	"068288": {
+		"name": "axial",
+		"modelo": "FN080-ZIQ.GG.V7P3",
+		"PotAbsorbida": 1850,
+		"maxAmperios": 2.8,
+		"minAmperios": 0.4
+	},
+	"071303": {
+		"name": "axial",
+		"modelo": "ZN100-ZIL.GL.V5P1",
+		"PotAbsorbida": 2400,
+		"maxAmperios": 3.7,
+		"minAmperios": 0.4
+	},
+	"071298": {
+		"name": "axial",
+		"modelo": "ZN100-ZIL.GQ.V5P1",
+		"PotAbsorbida": 3300,
+		"maxAmperios": 5,
+		"minAmperios": 0.5
+	},
+	"068352": {
+		"name": "axial",
+		"modelo": "FC091-SDS.7Q.V7",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"071188": {
+		"name": "axial",
+		"modelo": "A3G500 EC 286AW0503",
+		"PotAbsorbida": 840,
+		"maxAmperios": 3.3,
+		"minAmperios": 0.2
+	},
+	"071186": {
+		"name": "axial",
+		"modelo": "A3G500_BA92 EC 286AW0504",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"071189": {
+		"name": "axial",
+		"modelo": "A3G630 EC 286AW0610",
+		"PotAbsorbida": 850,
+		"maxAmperios": 1.5,
+		"minAmperios": 1.3
+	},
+	"071187": {
+		"name": "axial",
+		"modelo": "A3G630_BG97 EC 286AW0619",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"071365": {
+		"name": "axial",
+		"modelo": "A3G630-AQ37-94",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"071364": {
+		"name": "axial",
+		"modelo": "A3G630-BL06-G1",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"071370": {
+		"name": "axial",
+		"modelo": "A3G630-BL06-G3",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"minAmperios": 0
+	},
+	"069732": {
+		"name": "bomba",
+		"modelo": "CEA 120/3 400V Ran",
+		"PotAbsorbida": 820,
+		"maxAmperios": 1.6,
+		"caudal": 0
+	},
+	"068885": {
+		"name": "bomba",
+		"modelo": "CEA 120/3 400V Rp",
+		"PotAbsorbida": 820,
+		"maxAmperios": 1.6,
+		"caudal": 0
+	},
+	"069663": {
+		"name": "bomba",
+		"modelo": "CEA 70/3 400V RAN",
+		"PotAbsorbida": 610,
+		"maxAmperios": 1.5,
+		"caudal": 0
+	},
+	"069707": {
+		"name": "bomba",
+		"modelo": "CEA 210/3 400V RAN",
+		"PotAbsorbida": 1350,
+		"maxAmperios": 2.5,
+		"caudal": 0
+	},
+	"068881": {
+		"name": "bomba",
+		"modelo": "CEA 370/2 400V RAN",
+		"PotAbsorbida": 1950,
+		"maxAmperios": 3.4,
+		"caudal": 0
+	},
+	"068882": {
+		"name": "bomba",
+		"modelo": "CEA 370/3 400V RAN",
+		"PotAbsorbida": 2450,
+		"maxAmperios": 4.5,
+		"caudal": 0
+	},
+	"068445": {
+		"name": "bomba",
+		"modelo": "NSCE 32-125/30/P25RCS4",
+		"PotAbsorbida": 3000,
+		"maxAmperios": 6.9,
+		"caudal": 0
+	},
+	"068447": {
+		"name": "bomba",
+		"modelo": "NSCE 40-125/30/P25RCS4",
+		"PotAbsorbida": 3760,
+		"maxAmperios": 7.2,
+		"caudal": 0
+	},
+	"068449": {
+		"name": "bomba",
+		"modelo": "NSCE 40-125/40/P25RCS4",
+		"PotAbsorbida": 4000,
+		"maxAmperios": 7.7,
+		"caudal": 0
+	},
+	"068435": {
+		"name": "bomba",
+		"modelo": "MAXO 30-180-08-F42",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"068436": {
+		"name": "bomba",
+		"modelo": "MAXO 30-180-10-F42",
+		"PotAbsorbida": 250,
+		"maxAmperios": 1.7,
+		"caudal": 0
+	},
+	"068475": {
+		"name": "bomba",
+		"modelo": "MAXO 30-180-10-F21 iPWM",
+		"PotAbsorbida": 310.1,
+		"maxAmperios": 1.34,
+		"caudal": 5.1
+	},
+	"068476": {
+		"name": "bomba",
+		"modelo": "MAXO-R 30-180-10-F21 iPWM",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"068477": {
+		"name": "bomba",
+		"modelo": "MAXO-R 30-180-10-F42 MODB",
+		"PotAbsorbida": 250,
+		"maxAmperios": 1.7,
+		"caudal": 0
+	},
+	"069601": {
+		"name": "bomba",
+		"modelo": "MAXO 30-180-10-F02I",
+		"PotAbsorbida": 0,
+		"maxAmperios": 0,
+		"caudal": 0
+	},
+	"AlarmaZiehl": {
+		"0": [
+			"Sin alimentación de tensión.",
+			"",
+			"Comprobar la alimentación de tensión."
+		],
+		"1": [
+			"!Servicio normal sin fallos",
+			"",
+			""
+		],
+		"__": [
+			"Causa",
+			"Explicacion",
+			"Solucion"
+		],
+		"1x": [
+			"Sin liberación = OFF",
+			"Bornes “D1” - “24 V” (Digital In 1) no puenteados",
+			"Revisar cableado entre los bornes D1 y 24v del ventilador."
+		],
+		"2x": [
+			"Gestión de temperatura activa",
+			"El equipo se protege contra daños producidos por temperaturas interiores demasiado altas",
+			"Si la temperatura sube por encima de los valores límite especificados la modulación se reduce linealmente. Si la temperatura baja, la modulación asciende de nuevo de modo lineal. Comprobar el montaje del aparato y el enfriamiento del motor."
+		],
+		"3x": [
+			"Fallo de la posición del rotor",
+			"falló la determinación de la posición del rotor",
+			"Error después de 8 intentos de arranque. Comprobar (sin tensión de red) si el motor puede girar libremente."
+		],
+		"4x": [
+			"Apagón de fase (sólo con tipo 3 ~)",
+			" fallo de una fase de la red), el equipo se desconecta con un cierto retardo (aprox. 200 ms).",
+			"Comprobar tensión general y la alimentación de tensión al ventilador."
+		],
+		"5x": [
+			"Motor bloqueado",
+			"Si durante 8 segundos, no se mide un número de revoluciones mayor de cero, alarma de motor bloqueado. cada 2,5 segundo hara otro intento de arranque, si al cuarto intento no es exitoso, la desconexión será definitiva.",
+			"Sustitución del ventilador"
+		],
+		"6x": [
+			"Fallo módulo de potencia",
+			"Derivado a masa o cortocircuitado el bobinado del motor",
+			"Desconectar y conectar tensión, verificar voltage entrada ventilador(de las 3 fases), si el problema persiste, sustitución del ventilador"
+		],
+		"7x": [
+			"ZK Subtensión",
+			"Si la tensión del circuito intermedio desciende del valor límite predeterminado, se lleva a cabo el apagado",
+			"Esperar 75 segundos, si el no arranca, sustitución del ventilador."
+		],
+		"8x": [
+			"Sobretensión del circuito intermedio",
+			"Tensión de entrada muy alta o funcionamiento del motor por generador",
+			"Esperar 75 segundos, si el no arranca, sustitución del ventilador."
+		],
+		"9x": [
+			"Fase de enfriamiento módulo de potencia",
+			"Pausa durante 60 segundos, módulo de potencia con demasiada temperatura, despues de 2 intentos, apagado definitivo",
+			"Sustitución del ventilador."
+		],
+		"10x": [
+			"Fallo de comunicación",
+			"Comunicación Modbus iterrumpida",
+			"Comprobar cableado comunicación modbus, comprobar dirección y protocolo de comunicación sean los correctos."
+		],
+		"11x": [
+			"Fallo de arranque del motor",
+			"Motor no gira",
+			"Quitar tensión, comprobar moviendo las palas del vemtilador que giran libremente."
+		],
+		"12x": [
+			"Tensión de red demasiado baja",
+			"Desconexión del si la tensión recibida es inferior al valor límite",
+			"Comprobar tensión entrada al ventilador."
+		],
+		"13x": [
+			"Tensión de red demasiado alta",
+			"Desconexión del si la tensión recibida es superior al valor límite",
+			"Comprobar tensión entrada al ventilador."
+		],
+		"14x": [
+			"Fallo de corriente de punta",
+			"Desconexión del si la intensidad(Amperios) es superior al valor límite",
+			"Quitar tensión, comprobar moviendo las palas del vemtilador que giran libremente, sustitución del ventilador."
+		],
+		"17x": [
+			"Alarma de temperatura",
+			"Sobrepasada la temperatura límite máxima admisible",
+			"Comprobar cableado electrico. Sustitución ventilador"
+		],
+		"18x": [
+			"Error del sistema",
+			"Error Interno",
+			"Desconectar y conectar de nuevo la tensión al ventilador. Sustitución ventilador."
+		],
+		"20x": [
+			"Valores de vibración/vida útil",
+			"Exceso de vibración / limite horas vida útil sobrepasado",
+			"Daños en el rodete, suciedad o formación de hielo / Realizar mantenimiento."
+		],
+		"x": [
+			"Fallo interno de comunicación",
+			"Comunicación interna averiada",
+			"Reparación por parte de fabricante."
+		]
+	}
+}

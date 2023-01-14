@@ -4,17 +4,18 @@
 /**																																																				*/
 /**		Requerimientos de modulos de terceros y locales.																									 	*/
 /**																																																				*/
-/**		GLBL: 					Archivo de configuracion de la aplicacion																						*/
+/**		SERVER:					Archivo de configuracion de la aplicacion																						*/
 /**		querystring: 		Modulo gestion archivos JSON																												*/
 /**		{ curly }: 			Modulo gestion archivos JSON																												*/
 /**		{ setTimeout }: Modulo gestion archivos JSON																												*/
 /**																																																				*/
 /******************************************************************************************************** */
 
-const GLBL = require('../config/globals');
+const { SERVER } = require('../config/globals');
 const querystring = require('querystring');			
 const { curly } = require('node-libcurl');
 const { setTimeout } = require('timers/promises');
+const { Server } = require('http');
 
 
 /**********************************************************************************************************/
@@ -25,8 +26,9 @@ const { setTimeout } = require('timers/promises');
 /**																																																				*/
 /**********************************************************************************************************/
 
-const getUrl = GLBL.SERVER.urlApiCarel+'getvar.csv?';
-const setUrl = GLBL.SERVER.urlApiCarel + 'setvar.csv';
+const getUrl = SERVER.urlApiCarel + 'getvar.csv?';
+const setUrl = SERVER.urlApiCarel + 'setvar.csv';
+const alarms = SERVER.urlApiCarel + 'commissioning/alarms.cgi?';
 
 
 
@@ -51,7 +53,7 @@ const setApiCarel = async (objeto, aborto) => {
 		aborto ? await setTimeout(1000) : '';
 
 		if (sendData.statusCode === 200) {
-			console.log(sendData.data);
+			//console.log(sendData.data);
 			return true;
 		}
 	} catch (error) {
@@ -68,15 +70,14 @@ const setApiCarel = async (objeto, aborto) => {
 /**																																																				*/
 /** 	Un objeto y un booleano como parámetros, realiza solicitud a la API y devuelve los datos recibidos.	*/
 /**																																																				*/
-/** 	@param objeto - {																																										*/
-/** 	@param parseo - is a function that receives the data and returns the data in the format I need.			*/
-/** 	@returns {																																													*/
+/** 	@param objeto 																																											*/
+/** 	@return 																																														*/
 /**   	"status": "OK",																																										*/
 /**   	"data": {	objeto }																																								*/
 /**																																																				*/
 /**********************************************************************************************************/
 
-const getApiCarel = async (objeto, parseo) => {
+const getApiCarel = async (objeto) => {
 	try {
 		let requestData = await curly(getUrl, {
 			postFields: querystring.stringify(objeto)
@@ -109,7 +110,7 @@ const getAlarmas = async () => {
 	let alarmas = [];
 
 	try {
-		let getAlarmas = await curly('http://100.127.0.1/commissioning/alarms.cgi?', {
+		let getAlarmas = await curly(alarms, {
 			postFields: querystring.stringify({ 'action': ['getActive'] })
 		})
 

@@ -257,5 +257,696 @@
 			"valor": 6,
 			"name": "R-290"
 		}
-	]
+	],
+	"mbxc": {
+		"he": 0,
+		"inverter": 1,
+		"habTermicoVentInt": 0,
+		"habTermicoCompresores": 0,
+		"habTermicoBombas": 0,
+		"habTermicoVentExt": 0,
+		"habTermicoResistencias": 0,
+		"resistHielo": {
+			"watios": "0",
+			"numResistencias": 1
+		},
+		"resistCarter": {
+			"comp1": 0,
+			"comp2": 0,
+			"comp3": 0,
+			"comp4": 0
+		},
+		"presostatos": {
+			"pr_alta45_rm": 0,
+			"pr_alta42_ra": 1,
+			"pr_alta42_rm": 0,
+			"pr_baja4ra": 0,
+			"pr_kp": 0,
+			"pr_alta29": 0,
+			"pr_baja27": 0,
+			"pr_baja24": 0,
+			"pr_baja45": 0,
+			"pr_desescarche": 0
+		},
+		"derogaciones": {
+			"id": "",
+			"quitar": [],
+			"anyadir": []
+		},
+		"variaciones": [],
+		"recuperadorCalor": 0,
+		"pdp": 0,
+		"controlCondensacion": 0,
+		"PKDT": 0,
+		"soloFrio": 0,
+		"tipoVentilacion": "X",
+		"kitHidronico": 0,
+		"valvulaCorte": 0,
+		"rotacionBombas": 0,
+		"presionAgua": 0,
+		"medidorEnergia": 0,
+		"medidorMono": 0,
+		"medidorTri": 0,
+		"terminalPGD": 0,
+		"terminalMiniPGD": 0,
+		"terminalTHTUNE": 0,
+		"kgrRefrigerante": "",
+		"seqFases": 0,
+		"resisitenciaAire": 0,
+		"compresor": [
+			{
+				"name": "",
+				"modelo": "",
+				"PotAbsorbida": 0,
+				"maxPotencia": 0,
+				"minPotencia": 0,
+				"maxAmperios": 0,
+				"minAmperios": 0,
+				"envelope": ""
+			}
+		],
+		"turbina": [],
+		"motor": [],
+		"radial": [],
+		"axial": [
+			{
+				"name": "",
+				"modelo": "",
+				"PotAbsorbida": 0,
+				"maxAmperios": 0,
+				"minAmperios": 0
+			}
+		],
+		"bomba": [
+			{
+				"name": "",
+				"modelo": "",
+				"PotAbsorbida": 0,
+				"maxAmperios": 0,
+				"caudal": 0
+			}
+		],
+		"envelop": [],
+		"idioma": 0,
+		"numbombas": 1,
+		"numResistenciasElec": 0,
+		"caudal_agua_frio": 0,
+		"caudal_agua_calor": 0,
+		"sondaRetorno": 0,
+		"sondaimpulsionNTC": 0,
+		"sondaExterior": 0,
+		"compresores": 1,
+		"consumo_nominal_frio": 0,
+		"consumo_nominal_calor": 0,
+		"potencia_frig_frio": 0,
+		"potencia_frig_calor": 0,
+		"caudal_aire_cond": 0,
+		"caudal_aire_evap": 0,
+		"ventiladores_ext": 2,
+		"ventiladores_int": null,
+		"circuitos": 0,
+		"observaciones": "",
+		"observacionesTecnicas": "",
+		"refrigerante": 0,
+		"tests": [
+			{
+				"name": "Giro Bomba",
+				"descripcion": "Potencia, intensidad, sentido giro bombas",
+				"Enable": true,
+				"nname": "EN_TEST_BOMBES",
+				"estado": 0
+			},
+			{
+				"name": "Giro Ventiladores",
+				"descripcion": "Consumo y sentido giro ventiladores Ext.",
+				"Enable": true,
+				"nname": "EN_TEST_VENTILADORS_EXT",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Antihilelo",
+				"descripcion": "Resistencia Intercambiador Placas",
+				"Enable": true,
+				"nname": "EN_TEST_RESISTENCIES",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(OFF)",
+				"descripcion": "Seguridad Anti-Hielo (OFF)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_OFF",
+				"estado": 0
+			},
+			{
+				"name": "Control Flujo",
+				"descripcion": "Seguridad, Control Flujo",
+				"Enable": true,
+				"nname": "EN_TEST_FLUXE_PDP",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(ON)",
+				"descripcion": "Seguridad Anti-Hielo (ON)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_ON",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Frio",
+				"descripcion": "Calculos y Rendimiento Equipo (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_RENDIMENT_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Frio)",
+				"descripcion": "Seguridad Alta Presion (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_ALTA_FRED_LLEU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Frio)",
+				"descripcion": "Seguridad, Baja Presión (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_BAIXA_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión (45bar)",
+				"descripcion": "Seguridad Alta Presion (45bar)",
+				"Enable": true,
+				"nname": "EN_TEST_ALTA_FRED_GREU",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Calor",
+				"descripcion": "Calculos y Rendimiento Equipo (BOMBA)",
+				"Enable": true,
+				"nname": "EN_TEST_RENDIMENT_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Calor)",
+				"descripcion": "Seguridad Baja Presión (BOMBA)",
+				"Enable": true,
+				"nname": "EN_TEST_BAIXA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche",
+				"descripcion": "Desescarche Normal",
+				"Enable": true,
+				"nname": "EN_TEST_DESGLAS",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche Forzado",
+				"descripcion": "Desescarche Forzado",
+				"Enable": true,
+				"nname": "EN_TEST_DESGLAS_FORSAT",
+				"estado": 0
+			},
+			{
+				"name": "Térmico Bomba",
+				"descripcion": "Control y funcionamiento térmicos",
+				"Enable": true,
+				"nname": "EN_TEST_TERMICS",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Carter",
+				"descripcion": "Funcionamiento y consumo resistencia carter",
+				"Enable": false,
+				"nname": "Resistencia_Carter",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Calor)",
+				"descripcion": "Verificacion seguridad alta presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Remotos",
+				"descripcion": "Control y funcionamiento (On/Off) y (Ver/Inv) remotos",
+				"Enable": false,
+				"nname": "EN_TEST_REMOTS",
+				"estado": 0
+			},
+			{
+				"name": "Transductores Presión",
+				"descripcion": "Control sondas ratiometricas",
+				"Enable": false,
+				"nname": "Transductores_Presion"
+			},
+			{
+				"name": "Sondas H2o",
+				"descripcion": "Control sondas NTC",
+				"Enable": false,
+				"nname": "Sondas_H2o"
+			}
+		]
+	},
+	"ukr3": {
+		"tests": [
+			{
+				"name": "Giro Bomba",
+				"descripcion": "Potencia, intensidad, sentido giro bombas",
+				"Enable": true,
+				"nname": "EN_TEST_BOMBES",
+				"estado": 0
+			},
+			{
+				"name": "Giro Ventiladores",
+				"descripcion": "Consumo y sentido giro ventiladores Ext.",
+				"Enable": true,
+				"nname": "EN_TEST_VENTILADORS_EXT",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Antihilelo",
+				"descripcion": "Resistencia Intercambiador Placas",
+				"Enable": true,
+				"nname": "EN_TEST_RESISTENCIES",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(OFF)",
+				"descripcion": "Seguridad Anti-Hielo (OFF)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_OFF",
+				"estado": 0
+			},
+			{
+				"name": "Control Flujo",
+				"descripcion": "Seguridad, Control Flujo",
+				"Enable": true,
+				"nname": "EN_TEST_FLUXE_PDP",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(ON)",
+				"descripcion": "Seguridad Anti-Hielo (ON)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_ON",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Frio",
+				"descripcion": "Calculos y Rendimiento Equipo (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_RENDIMENT_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Frio)",
+				"descripcion": "Seguridad Alta Presion (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_ALTA_FRED_LLEU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Frio)",
+				"descripcion": "Seguridad, Baja Presión (FRIO)",
+				"Enable": true,
+				"nname": "EN_TEST_BAIXA_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión (45bar)",
+				"descripcion": "Seguridad Alta Presion (45bar)",
+				"Enable": true,
+				"nname": "EN_TEST_ALTA_FRED_GREU",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Calor",
+				"descripcion": "Calculos y Rendimiento Equipo (BOMBA)",
+				"Enable": true,
+				"nname": "EN_TEST_RENDIMENT_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Calor)",
+				"descripcion": "Seguridad Baja Presión (BOMBA)",
+				"Enable": true,
+				"nname": "EN_TEST_BAIXA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche",
+				"descripcion": "Desescarche Normal",
+				"Enable": true,
+				"nname": "EN_TEST_DESGLAS",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche Forzado",
+				"descripcion": "Desescarche Forzado",
+				"Enable": true,
+				"nname": "EN_TEST_DESGLAS_FORSAT",
+				"estado": 0
+			},
+			{
+				"name": "Térmico Bomba",
+				"descripcion": "Control y funcionamiento térmicos",
+				"Enable": true,
+				"nname": "EN_TEST_TERMICS",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Carter",
+				"descripcion": "Funcionamiento y consumo resistencia carter",
+				"Enable": false,
+				"nname": "Resistencia_Carter",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Calor)",
+				"descripcion": "Verificacion seguridad alta presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Remotos",
+				"descripcion": "Control y funcionamiento (On/Off) y (Ver/Inv) remotos",
+				"Enable": false,
+				"nname": "EN_TEST_REMOTS",
+				"estado": 0
+			},
+			{
+				"name": "Transductores Presión",
+				"descripcion": "Control sondas ratiometricas",
+				"Enable": false,
+				"nname": "Transductores_Presion"
+			},
+			{
+				"name": "Sondas H2o",
+				"descripcion": "Control sondas NTC",
+				"Enable": false,
+				"nname": "Sondas_H2o"
+			}
+		]
+	},
+	"kr3": {
+		"tests": [
+			{
+				"name": "Giro Compresores",
+				"descripcion": "Consumo y sentido giro compresores",
+				"Enable": true,
+				"nname": "EN_TEST_COMPRESSORS",
+				"estado": 0
+			},
+			{
+				"name": "Giro Bomba",
+				"descripcion": "Consumo y sentido giro bombas",
+				"Enable": false,
+				"nname": "EN_TEST_BOMBES",
+				"estado": 0
+			},
+			{
+				"name": "Giro Ventiladores",
+				"descripcion": "Consumo y sentido giro ventiladores Ext.",
+				"Enable": false,
+				"nname": "EN_TEST_VENTILADORS_EXT",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Antihilelo",
+				"descripcion": "Funcionamiento y consumo resistencia anti-hielo",
+				"Enable": false,
+				"nname": "EN_TEST_RESISTENCIES",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Carter",
+				"descripcion": "Funcionamiento y consumo resistencia carter",
+				"Enable": false,
+				"nname": "Resistencia_Carter",
+				"estado": 0
+			},
+			{
+				"name": "Térmico Bomba",
+				"descripcion": "Verificación funcionamiento térmicos",
+				"Enable": true,
+				"nname": "EN_TEST_TERMICS",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(OFF)",
+				"descripcion": "Verificacion seguridad anti-hielo (OFF)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_OFF",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Frio)",
+				"descripcion": "Verificacion seguridad alta presión (FRIO)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_FRED_LLEU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Calor)",
+				"descripcion": "Verificacion seguridad alta presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Frio)",
+				"descripcion": "Verificacion seguridad baja presión (FRIO)",
+				"Enable": false,
+				"nname": "EN_TEST_BAIXA_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Calor)",
+				"descripcion": "Verificacion seguridad baja presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_BAIXA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión (45bar)",
+				"descripcion": "Verificacion seguridad alta presión (45bar)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_FRED_GREU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(ON)",
+				"descripcion": "Verificacion seguridad anti-hielo (ON)",
+				"Enable": false,
+				"nname": "EN_TEST_ANTIGEL_ON",
+				"estado": 0
+			},
+			{
+				"name": "Control Flujo",
+				"descripcion": "Verificacion funcionamiento control flujo",
+				"Enable": false,
+				"nname": "EN_TEST_FLUXE_PDP",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Frio",
+				"descripcion": "Verificacion rendimiento en frio",
+				"Enable": false,
+				"nname": "EN_TEST_RENDIMENT_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Calor",
+				"descripcion": "Verificacion rendimiento en bomba",
+				"Enable": false,
+				"nname": "EN_TEST_RENDIMENT_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche",
+				"descripcion": "Control y funcionamiento de desescarche",
+				"Enable": false,
+				"nname": "EN_TEST_DESGLAS",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche Forzado",
+				"descripcion": "Control y funcionamiento de desescarche forzado",
+				"Enable": false,
+				"nname": "EN_TEST_DESGLAS_FORSAT",
+				"estado": 0
+			},
+			{
+				"name": "Remotos",
+				"descripcion": "Control y funcionamiento (On/Off) y (Ver/Inv) remotos",
+				"Enable": false,
+				"nname": "EN_TEST_REMOTS",
+				"estado": 0
+			},
+			{
+				"name": "Transductores Presión",
+				"descripcion": "Control sondas ratiometricas",
+				"Enable": false,
+				"nname": "Transductores_Presion"
+			},
+			{
+				"name": "Sondas H2o",
+				"descripcion": "Control sondas NTC",
+				"Enable": false,
+				"nname": "Sondas_H2o"
+			}
+		]
+	},
+	"wph": {
+		"tests": [
+			{
+				"name": "Giro Compresores",
+				"descripcion": "Consumo y sentido giro compresores",
+				"Enable": true,
+				"nname": "EN_TEST_COMPRESSORS",
+				"estado": 0
+			},
+			{
+				"name": "Giro Bomba",
+				"descripcion": "Consumo y sentido giro bombas",
+				"Enable": false,
+				"nname": "EN_TEST_BOMBES",
+				"estado": 0
+			},
+			{
+				"name": "Giro Ventiladores",
+				"descripcion": "Consumo y sentido giro ventiladores Ext.",
+				"Enable": true,
+				"nname": "EN_TEST_VENTILADORS_EXT",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Antihilelo",
+				"descripcion": "Funcionamiento y consumo resistencia anti-hielo",
+				"Enable": false,
+				"nname": "EN_TEST_RESISTENCIES",
+				"estado": 0
+			},
+			{
+				"name": "Resistencia Carter",
+				"descripcion": "Funcionamiento y consumo resistencia carter",
+				"Enable": true,
+				"nname": "Resistencia_Carter",
+				"estado": 0
+			},
+			{
+				"name": "Térmico Bomba",
+				"descripcion": "Verificación funcionamiento térmicos",
+				"Enable": false,
+				"nname": "EN_TEST_TERMICS",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(OFF)",
+				"descripcion": "Verificacion seguridad anti-hielo (OFF)",
+				"Enable": true,
+				"nname": "EN_TEST_ANTIGEL_OFF",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Frio)",
+				"descripcion": "Verificacion seguridad alta presión (FRIO)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_FRED_LLEU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión(Calor)",
+				"descripcion": "Verificacion seguridad alta presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Frio)",
+				"descripcion": "Verificacion seguridad baja presión (FRIO)",
+				"Enable": false,
+				"nname": "EN_TEST_BAIXA_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Baja Presión (Calor)",
+				"descripcion": "Verificacion seguridad baja presión (BOMBA)",
+				"Enable": false,
+				"nname": "EN_TEST_BAIXA_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Alta Presión (45bar)",
+				"descripcion": "Verificacion seguridad alta presión (45bar)",
+				"Enable": false,
+				"nname": "EN_TEST_ALTA_FRED_GREU",
+				"estado": 0
+			},
+			{
+				"name": "Seg. Anti-Hielo(ON)",
+				"descripcion": "Verificacion seguridad anti-hielo (ON)",
+				"Enable": false,
+				"nname": "EN_TEST_ANTIGEL_ON",
+				"estado": 0
+			},
+			{
+				"name": "Control Flujo",
+				"descripcion": "Verificacion funcionamiento control flujo",
+				"Enable": false,
+				"nname": "EN_TEST_FLUXE_PDP",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Frio",
+				"descripcion": "Verificacion rendimiento en frio",
+				"Enable": false,
+				"nname": "EN_TEST_RENDIMENT_FRED",
+				"estado": 0
+			},
+			{
+				"name": "Rendimiento Calor",
+				"descripcion": "Verificacion rendimiento en bomba",
+				"Enable": false,
+				"nname": "EN_TEST_RENDIMENT_BOMBA",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche",
+				"descripcion": "Control y funcionamiento de desescarche",
+				"Enable": false,
+				"nname": "EN_TEST_DESGLAS",
+				"estado": 0
+			},
+			{
+				"name": "Desescarche Forzado",
+				"descripcion": "Control y funcionamiento de desescarche forzado",
+				"Enable": false,
+				"nname": "EN_TEST_DESGLAS_FORSAT",
+				"estado": 0
+			},
+			{
+				"name": "Remotos",
+				"descripcion": "Control y funcionamiento (On/Off) y (Ver/Inv) remotos",
+				"Enable": false,
+				"nname": "EN_TEST_REMOTS",
+				"estado": 0
+			},
+			{
+				"name": "Transductores Presión",
+				"descripcion": "Control sondas ratiometricas",
+				"Enable": false,
+				"nname": "Transductores_Presion"
+			},
+			{
+				"name": "Sondas H2o",
+				"descripcion": "Control sondas NTC",
+				"Enable": false,
+				"nname": "Sondas_H2o"
+			}
+		]
+	}
 }

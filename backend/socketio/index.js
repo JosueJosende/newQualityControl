@@ -7,9 +7,12 @@
 /**		GLBL: 			Archivo de configuracion de la aplicacion																								*/
 /**																																																				*/
 /******************************************************************************************************** */
-const { APP, SERVER, ESTADOS } = require('../config/index');
+const { APP, SERVER, ESTADOS, VERIFICACION } = require('../config/index');
 const { datosVerificacion } = require('../models/index');
-const { ListadoVerificadores } = require('../models/usersSQL');
+const { ListadoVerificadores, Autenticacion } = require('../models/usersSQL');
+const { setSocket } = require('../services/SendToClient');
+
+
 
 
 
@@ -48,7 +51,15 @@ let Socket_IO = (server) => {
 		let verificacionEnCurso = datosVerificacion.getData('/');
 
 
-		console.log('Socket conectado: ' + socket.id + '  |  Total sockets conectados: ' + numSockets);
+		APP.debug ? console.log('Socket conectado: ' + socket.id + '  |  Total sockets conectados: ' + numSockets) : '';
+
+
+
+		// El primer socket conectado será el master con lo que las respuestas de accion solo se le enviaran
+		// a este, las respuestas de información se les enviará a todos los sockets conectados.
+
+		// !!!! A tener en cuenta, cuando el master se desconecte y haya otros sockets conectados !!!!
+		numSockets === 1 ? setSocket(socket, io) : '';
 		
 
 
@@ -80,11 +91,17 @@ let Socket_IO = (server) => {
 
 		/******************************************************************************************************/
 		/**																																																		*/
-		/** 	Enviamos al cliente peticion de nombre de usuario																								*/
+		/** 	Enviamos al cliente peticion de nombre de usuario, esperando respuesta por medio								*/
+		/** 	del oyente 'datosUsuario'																																				*/
+		/**																																																		*/
+		/**		Esta lógica trabaja en la sombra, todo lo hace sin que interactue el usuario										*/
 		/**																																																		*/
 		/******************************************************************************************************/
 
 		APP.operario === '' ? socket.emit('peticionDatosUsuario') : '';
+
+		// Almacenamos en la variable global los datos recibidos del usuario autentificado
+		socket.on('datosUsuario', (datosUsuario) => { APP.operario = datosUsuario } );
 
 
 
@@ -113,16 +130,31 @@ let Socket_IO = (server) => {
 
 		if (Object.keys(verificacionEnCurso).length >= 1) {
 
-			if (APP.runLoop) { // Delimita si el que haya una nueva conexion socket ha sido por caida del serviddor, ()TRUE = nuevo socket, FALSE = caida server)
-				if (numSockets === 1) {
-					socket.emit('pageStart', verificacionEnCurso);  // Enviamos primero la orden para que se desplace a la pagina start
+			if (VERIFICACION.RunLoop) { // Delimita si el que haya una nueva conexion socket ha sido por caida del serviddor, ()TRUE = nuevo socket, FALSE = caida server)
+				if (ESTADOS.EstadoEquipo) {
+					if (numSockets === 1) {
+						socket.emit('sendStart', verificacionEnCurso);  // Enviamos primero la orden para que se desplace a la pagina start
+					} else {
+						socket.emit('sendValues', verificacionEnCurso);
+					}
 				} else {
-					socket.emit('valores', verificacionEnCurso);
+					APP.debug ? (console.log({
+						NumSockets: numSockets,
+						Descripcion: 'Detectada verificación en curso, pero sin comunicación con el equipo',
+						origen: './socketio/index.js <-- ctrl+g(120)'
+					}) ) : '';
 				}
 			} else {
 				if (numSockets === 1) {
-					GLBL.APP.EjecucionActiva = true;
+					VERIFICACION.RunLoop = true;
+					VERIFICACION.SoftInstalado = true;
+					VERIFICACION.TiemposGuardados = true;
+					VERIFICACION.TiemposModificados = true;
+					VERIFICACION.SetDatosVerificacion = true;
+					VERIFICACION.SetTrazabilidad = true;
+
 					comunicacionEquipo.comunicar(io);
+
 					socket.emit('pageStart', verificacionEnCurso);  // Enviamos primero la orden para que se desplace a la pagina start
 				} else {
 					socket.emit('valores', verificacionEnCurso);  // Enviamos primero la orden para que se desplace a la pagina start
@@ -142,13 +174,13 @@ let Socket_IO = (server) => {
 		/******************************************************************************************************/
 
 		ListadoVerificadores((datos) => {
-				socket.emit('dadesGenerals', {
-					estats: ESTADOS,
-					verificadors: datos,
-					refrigerants: datosSinConexion.getData('/refrigerants'),
-					equips: datosSinConexion.getData('/equips'),
-				});
+			socket.emit('dadesGenerals', {
+				estats: ESTADOS,
+				verificadors: datos,
+				refrigerants: datosSinConexion.getData('/refrigerants'),
+				equips: datosSinConexion.getData('/equips'),
 			});
+		});
 		
 
 
@@ -159,7 +191,10 @@ let Socket_IO = (server) => {
 
 
 	
-		socket.on('datosEquipo', (datos) => { });
+		socket.on('authentication', (datosAuth) => Autenticacion(datosAuth));
+
+		socket.on('getEquip', (datosEquipo) => EquipController.getEquip(datosEquipo) );
+		socket.on('setEquip', (datosEquipo) => EquipController.setEquip(datosEquipo) );
 
 		
 

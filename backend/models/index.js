@@ -82,7 +82,8 @@ module.exports.configVerificacion = new JsonDB(new ConfigDB('../dbConfig', true,
 /**																																																				*/
 /******************************************************************************************************** */
 
-module.exports.inacabadas = async (datos) => {
+module.exports.inacabadas = new JsonDB(new ConfigDB('../inacabadas', true, false, '/'));
+/*module.exports.inacabadas = async (datos) => {
 	let inacabada = new JsonDB(new ConfigDB('../verificaciones/inacabadas/' + datos.nombre + '_' + datos.numSerie, true, false, '/'));
 	
 	try {
@@ -90,7 +91,7 @@ module.exports.inacabadas = async (datos) => {
 	} catch (err) {
 		console.log('Ocurrio un error al guardar la verificacion en inacabadas: ', err);
 	}
-}
+}*/
 
 
 

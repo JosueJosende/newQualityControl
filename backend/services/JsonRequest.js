@@ -32,7 +32,7 @@ const pushData = async (ruta, data, machacar) => {
 	try {
 		datosVerificacion.push(ruta, data, machacar);
 	} catch (error) {
-		console.log('JsonDB.js [pushData]', error);
+		console.log('JsonRequest.js [pushData]', error);
 	}
 }
 
@@ -52,7 +52,7 @@ const getData = async (ruta) => {
 	try {
 		if (ruta) return datosVerificacion.getData(ruta);
 	} catch (error) {
-		console.log('JsonDB.js [getData]', error);
+		console.log('JsonRequest.js [getData]', error);
 	}
 }
 
@@ -72,7 +72,7 @@ const delData = async (ruta) => {
 	try {
 		datosVerificacion.delete(ruta);
 	} catch (error) {
-		console.log('JsonDB.js [delData]', error);
+		console.log('JsonRequest.js [delData]', error);
 	}
 }
 
@@ -90,7 +90,7 @@ const delData = async (ruta) => {
 /**																																																				*/
 /**********************************************************************************************************/
 
-const guardarVerificacion = async (datos, donde) => {
+const saveVerificacion = async (datos, donde) => {
 	if (!datos) datos = datosVerificacion.getData('/');
 
 	if (donde === 'inacabadas') {
@@ -115,5 +115,5 @@ module.exports = {
 	pushData: pushData,
 	getData: getData,
 	delData: delData,
-	guardarVerificacion: guardarVerificacion
+	saveVerificacion: saveVerificacion
 };
