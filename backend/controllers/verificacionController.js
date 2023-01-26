@@ -75,12 +75,33 @@ const initVerififcacion = () => {
 			
 			/******************************************************************************/
 			/**																																						*/
-			/**		Obtiene datos de controlador y modifica variables segun los valores			*/
+			/**		Espera a obtier datos de controlador y modifica variables segun los valores			*/
 			/**		recibidos.																															*/
 			/**																																						*/
 			/******************************************************************************/
 
-			getApiCarel(PETICIONES.esenciales).then((datos) => {
+			let datos = await getApiCarel(PETICIONES.esenciales).then();
+			
+			if (datos) {
+
+				ESTADOS.EstadoControlador = true;
+				VERIFICACION.Pausada = datos.Pausa;
+
+				enviar.infoEquipo = datos;
+
+				if (datos.EV_Estat) await getAlarmas().then((alarmas) => enviar.alarmas = alarmas);
+
+				await comunicacionEquipo(datos).then(() => {
+					toClient('', { ...enviar, ...ESTADOS }, true);
+				});
+
+			} else {
+				ESTADOS.EstadoControlador = false;
+			}
+
+			
+
+			/*await getApiCarel(PETICIONES.esenciales).then((datos) => {
 
 				if (datos) {
 
@@ -103,7 +124,7 @@ const initVerififcacion = () => {
 				}
 			});
 
-			await setTimeout(1000);
+			//await setTimeout(1000);*/
 
 		} finally {
 			
@@ -174,7 +195,7 @@ const comunicacionEquipo = async (datos) => {
 		ESTADOS.EstadoEquipo = false;
 	}
 
-	return true;
+	//return true;
 }
 
 
